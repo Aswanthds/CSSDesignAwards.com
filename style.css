@@ -41,6 +41,8 @@ header {
 }
 
 .btn-submit {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
   margin-top: 10px;
   position: absolute;
   width: 80px;
@@ -50,6 +52,7 @@ header {
   border: transparent;
   font-weight: bold;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .section {
@@ -211,6 +214,8 @@ header {
   margin-left: -90px;
   width: max-content;
   font-weight: bolder;
+  letter-spacing: 3px;
+  font-size: 14px;
 }
 
 .btn-head .overlay {
@@ -252,6 +257,8 @@ header {
 .t2,
 .t3 p {
   font-weight: bolder;
+  font-size: 14px;
+  letter-spacing: 3px;
 }
 .t1 {
   margin-right: 80px;
@@ -309,12 +316,17 @@ header {
   display: grid;
   grid-gap: 14.5rem;
   grid-template-columns: repeat(3,160px);
-  grid-template-rows: repeat(2, 350px);
+  grid-template-rows: repeat(2, 50px);
 
 }
 .img-rows p{
   display: flex;
   font-weight: bolder;
+  
+}
+.previous .title{
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 .previous .thumb1 {
@@ -322,7 +334,9 @@ header {
   flex-direction: column;
   width: 300px;
   margin-bottom: 20px;
+  
 }
+
 
 .previous .thumb2 {
   display: flex;
@@ -393,9 +407,11 @@ header {
 
 .imag{
   display: flex;
-  margin-top: 150px;
+  margin-top: 250px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
+  height: 100px;
 }
 
 footer{
@@ -424,4 +440,29 @@ footer .social{
   position: relative;
   display: flex;
   left:  24.5%;
+}
+.btn {
+  position: relative;
+  margin-left: 500px;
+  width: max-content;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+}
+
+.btn .overlay {
+  position: absolute;
+  background-color: rgba(241, 86, 241, 0.6);
+  height: 30px;
+  width: 80px;
+  margin-left: 30px;
+  margin-top: -38px;
+  z-index: -1;
+  
+}
+
+img:hover{
+  cursor: pointer;
+
 }
