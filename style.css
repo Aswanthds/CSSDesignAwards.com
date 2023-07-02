@@ -2,13 +2,17 @@ body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   background-color: #f1efe9;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: -5px;
+  padding: 5px;
+  font-family:system-ui,'Open Sans';
 }
 
 header {
   display: flex;
   flex-direction: row;
   position: sticky;
+  background-color: #f1efe9;
 }
 
 .cen-img {
@@ -26,7 +30,7 @@ header {
   margin-top: 20px;
   position: absolute;
   width: max-content;
-  right: 200px;
+  right: 250px;
 }
 
 .search-img {
@@ -62,18 +66,20 @@ header {
   visibility: hidden;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
- 
+
 }
-.top{
+
+.top {
   margin-left: 100px;
-  margin-top:50px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
 }
-.award-txt{
+
+.award-txt {
   color: #000000;
   letter-spacing: 4px;
   font-size: 16px;
@@ -82,33 +88,32 @@ header {
   height: max-content;
 }
 
-.monogram{
+.monogram {
   height: 110px;
   margin-top: 30px;
   margin-left: 110px;
 }
 
-.mono-de{
+.mono-de {
   margin-top: 150px;
   margin-left: -120px;
   line-height: 2px;
-  
+
 }
 
-.mono-de .top-t{
+.mono-de .top-t {
   font-weight: bold;
 }
 
-.back
-{
+.back {
   z-index: -1;
   height: 260px;
   background-color: #E2DED1;
   width: 800px;
-  position: absolute;
-  right: 50px;
-  top: 73%;
-
+  position: relative;
+  margin-top: -100px;
+  margin-left: 25%;
+  margin-bottom: -100px;
 }
 
 .back .text {
@@ -121,26 +126,26 @@ header {
   margin-top: 20px;
 }
 
-.back .pics{
+.back .pics {
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: row;
   width: max-content;
   margin-top: 15%;
-  align-items:flex-end;
+  align-items: flex-end;
   left: 55%;
   margin-left: 80px;
 
 }
-.pics img{
+
+.pics img {
   height: 40px;
   width: 40px;
-  
-  
+
+
 }
 
-.trophy
-{
+.trophy {
   display: flex;
   border: 3.0px solid black;
   border-radius: 50%;
@@ -151,63 +156,64 @@ header {
   margin-left: 20px;
 }
 
-.scores{
+.scores {
   position: relative;
   margin-left: 20px;
   text-align: center;
-  left:  100px;
+  left: 100px;
   padding-right: 10px;
 }
 
 
-.scores-total{
+.scores-total {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.scores p{
+.scores p {
   font-size: 13px;
   letter-spacing: 3px;
   line-height: 2px;
 }
 
-.scores  p strong{
+.scores p strong {
   font-size: 10px;
   text-transform: uppercase;
 
 }
 
-.scores-total p{
-letter-spacing: 3px;
-text-transform: uppercase;
-}
-
-.judges{
-  position: relative;
-  line-height: 3px;
-  text-align: center;
-  left:  150px;
-
-}
-.judges p{
+.scores-total p {
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
-.judges p strong{
-  
+.judges {
+  position: relative;
+  line-height: 3px;
+  text-align: center;
+  left: 150px;
+
+}
+
+.judges p {
+  text-transform: uppercase;
+}
+
+.judges p strong {
+
   font-weight: bolder;
   font-size: 30px;
 }
 
-.btn-head{
+.btn-head {
   position: relative;
-  top: 150px;
-  left: 10px;
+  margin-left: -90px;
   width: max-content;
+  font-weight: bolder;
 }
 
-.btn-head .section {
+.btn-head .overlay {
   position: absolute;
   background-color: rgba(241, 86, 241, 0.6);
   height: 30px;
@@ -215,4 +221,207 @@ text-transform: uppercase;
   margin-left: 110px;
   margin-top: -38px;
   z-index: -1;
+  
+}
+.overlay:hover{
+  display: none;
+  cursor: pointer;
+}
+
+.newest {
+  position: relative;
+  top: 200px;
+  left: 100px;
+  padding: 20px;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+.row img {
+  height: 200px;
+  width: 300px;
+}
+
+.t1,
+.t2,
+.t3 p {
+  font-weight: bolder;
+}
+.t1 {
+  margin-right: 80px;
+  margin-left: -10px;
+}
+
+.t2 {
+  margin-right: 80px;
+}
+
+.t3 {
+  margin-right: 50px;
+}
+
+
+
+
+.awards {
+  display: flex;
+
+}
+
+.awards p {
+  margin-right: 30px;
+  margin-top: -10px;
+  font-size: 10px;
+  color: gray;
+  font-weight: bold;
+}
+
+/* previous  */
+
+.previous {
+  position: relative;
+  top: 200px;
+  left: 100px;
+  padding: 20px;
+ 
+}
+
+.previous img {
+  height: 200px;
+  width: 300px;
+}
+
+.previous .btn-head {
+  position: relative;
+  margin-left: -90px;
+  width: max-content;
+  text-transform: uppercase;
+}
+
+.previous .img-rows {
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 14.5rem;
+  grid-template-columns: repeat(3,160px);
+  grid-template-rows: repeat(2, 350px);
+
+}
+.img-rows p{
+  display: flex;
+  font-weight: bolder;
+}
+
+.previous .thumb1 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.previous .thumb2 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb3 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb4 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb5 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb6 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb7 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb8 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb9 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb10 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb11{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.previous .thumb12{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.imag{
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  position: relative;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  left: 30px;
+}
+
+footer h2{
+  font-size: small;
+  text-transform: uppercase;
+}
+footer .social{
+  align-self: center;
+  margin-left: 24.5%;
+}
+
+.social i{
+  padding: 10px;
+}
+
+.right {
+  position: relative;
+  display: flex;
+  left:  24.5%;
 }
