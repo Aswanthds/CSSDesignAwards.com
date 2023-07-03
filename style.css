@@ -12,13 +12,20 @@ header {
   display: flex;
   flex-direction: row;
   position: sticky;
+  top: 0;
   background-color: #f1efe9;
+  z-index: 1;
+  box-shadow: 10px 20px 10px #f1efe9;
+}
+
+.sid-img{
+  margin-left:20px;
 }
 
 .cen-img {
   height: 80px;
   align-self: center;
-  margin-left: 350px;
+  margin-left: 420px;
   position: relative;
 }
 
