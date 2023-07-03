@@ -438,6 +438,10 @@ footer .social{
   align-self: center;
   margin-left: 24.5%;
 }
+.social img:hover{
+  position: absolute;
+  cursor: pointer;
+}
 
 .social i{
   padding: 10px;
